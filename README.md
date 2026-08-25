@@ -2,10 +2,37 @@
 
 智能体研发 / 具身规划 / 长尾感知与 PEFT / 论文与系统工程
 
-我主要做两条线：
+我做的不是单点模型，而是把论文方法、实验协议和运行时系统做成闭环。
+论文、代码、实验、图表和稿件整理均由本人主导完成。
 
-1. 论文方法：围绕长尾感知、低资源适配、结构抽取和边界建模，做可复现的模型与实验系统。
-2. 智能体系统：把训练好的能力放进 LangGraph runtime、ROS 接入、CommandBus 和 benchmark 框架里。
+## 我最强的几件事
+
+- 能把原始数据清洗成可训练、可审计、可复现的数据集
+- 能把 LoRA / DoRA / prototype memory / hierarchical pooling 落到可跑代码
+- 能把模型接进 LangGraph / ROS / CommandBus / benchmark runtime
+- 能把并行推理、评测协议、部署吞吐和结果复盘一起管住
+
+## 代表成果
+
+| 项目 | 状态 | 我做的核心工作 | 结果亮点 |
+| --- | --- | --- | --- |
+| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 已接收 | 设计层次化语义聚合 + 尾部感知记忆对齐，完成实验与图表整理 | 110M 级 PEFT 框架，在 SMP2020-EWECT 上对标 7B LLM，Macro-F1 提升 6.12 个百分点，吞吐量提升约 55 倍 |
+| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收 | 做严格 held-out 协议、完成结果整理和稳定性验证 | 5/6 配置 Tail-F1 最优，4/6 配置 Macro-F1 最优 |
+| [SPEAR](https://github.com/my420254/ECPE) | KBS 投稿版本 | 设计 span-aware 表征、DoRA biaffine、R-Drop 和窗口约束解码 | 10 折交叉验证 F1 达到 77.24% |
+| [FASTE](https://github.com/my420254/paper) | ESWA 投稿版本 | 设计多层特征融合 + 对抗训练，并完成论文图表与实验闭环 | ASTE 抽取达到强基线水平，兼顾边界精度与工程实时性 |
+| [OurAgent](https://github.com/my420254/OurAgent) | 持续迭代 | 把规划能力接入 LangGraph runtime、ROS 接入和 CommandBus | 支持中断、恢复、反思、benchmark 统一调度 |
+
+## 我的工作风格
+
+我更偏算法开发，但不会只停在算法本身。
+我会把方法、数据、评测、部署、文档和演示一起做完，让一个项目能被真正看懂、跑通、复现和展示。
+
+## 我在做什么
+
+- 把原始数据整理成可训练、可审计、可复现的数据集
+- 把论文里的方法对比、图表、显著性检验和部署评估做成完整链路
+- 把单次推理结果变成可调度、可中断、可恢复的 agent runtime
+- 把模型能力扩展到多 benchmark、多模型、多进程并行的实际环境
 
 ## 正在推进 / 未来展示方向
 
@@ -13,25 +40,6 @@
 - 多 Agent 协同与任务编排
 - 大模型部署、评测和推理加速
 - 面向实际业务的数据治理与算法落地
-
-我更偏算法开发，但会把算法做成能跑、能讲、能展示的系统。
-
-## 代表成果
-
-| 项目 | 状态 | 亮点 |
-| --- | --- | --- |
-| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 已接收 | 110M 级 PEFT 框架，在 SMP2020-EWECT 上对标 7B LLM，Macro-F1 提升 6.12 个百分点，吞吐量提升约 55 倍 |
-| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收 | 严格 held-out 评测，5/6 配置 Tail-F1 最优，4/6 配置 Macro-F1 最优 |
-| [SPEAR](https://github.com/my420254/ECPE) | KBS 投稿版本 | ECPE 抽取框架，DoRA biaffine + R-Drop + 窗口约束解码，10 折交叉验证 F1 达到 77.24% |
-| [FASTE](https://github.com/my420254/paper) | ESWA 投稿版本 | ASTE 抽取框架，多层特征融合 + 对抗训练，兼顾边界精度与工程实时性 |
-| [OurAgent](https://github.com/my420254/OurAgent) | 内部框架 | LangGraph + ROS + CommandBus + 中断恢复 + 分层反思 + 多 benchmark 接入 |
-
-## 我在做什么
-
-- 把原始数据整理成可训练、可审计、可复现的数据集。
-- 把 LoRA / DoRA / prototype memory / hierarchical pooling 这类方法落到可跑代码里。
-- 把单次推理结果变成可调度、可中断、可恢复的 agent runtime。
-- 把论文里的方法对比、图表、显著性检验和部署评估做成完整链路。
 
 ## 公开仓库
 
