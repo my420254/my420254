@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>张梦洋 | Public Portfolio</title>
+  <link rel="stylesheet" href="site/styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">PUBLIC PORTFOLIO</div>
+      <h1>张梦洋</h1>
+      <p class="lead">智能体研发 / 具身规划 / 长尾感知与 PEFT</p>
+      <p class="summary">
+        从数据清洗、监督微调，到可中断、可恢复、可反思的智能体 runtime，
+        再到论文级方法和严格评测协议，我做的是一条完整的研发链路。
+      </p>
+      <div class="chips">
+        <span>4 Papers</span>
+        <span>2 Accepted</span>
+        <span>2 In Review</span>
+        <span>1 Agent Framework</span>
+        <span>5 Benchmarks</span>
+      </div>
+      <div class="links">
+        <a href="https://github.com/my420254">GitHub</a>
+        <a href="https://gitee.com/my420254">Gitee</a>
+        <a href="README.md">Profile README</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Selected Works</h2>
+        <span>公开状态：已接收 / 投稿中</span>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="meta">WISA · Accepted</div>
+          <h3>Hy-MoRA</h3>
+          <p>面向中文社交媒体长尾情感分析的轻量化 PEFT 框架。</p>
+          <ul>
+            <li>HSA + TMA 双模块</li>
+            <li>110M 对标 7B LLM</li>
+            <li>Macro-F1 +6.12，吞吐量约 +55x</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="meta">ECML-PKDD · Accepted</div>
+          <h3>HiPro-LoRA</h3>
+          <p>严格 held-out 协议下的低资源长尾情感分析框架。</p>
+          <ul>
+            <li>Hierarchical pooling + prototype memory</li>
+            <li>5 / 6 配置 Tail-F1 最优</li>
+            <li>4 / 6 配置 Macro-F1 最优</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="meta">KBS · Submission</div>
+          <h3>SPEAR</h3>
+          <p>Emotion-Cause Pair Extraction 的结构解耦与边界约束方案。</p>
+          <ul>
+            <li>Span-aware clause encoder</li>
+            <li>DoRA biaffine scoring</li>
+            <li>10-fold F1 77.24%</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="meta">ESWA · Submission</div>
+          <h3>FASTE</h3>
+          <p>多层特征融合与对抗训练驱动的 ASTE 抽取框架。</p>
+          <ul>
+            <li>MLFF + AT-FGM</li>
+            <li>非生成式抽取路线</li>
+            <li>14lap F1 66.60</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>OurAgent</h2>
+        <span>LangGraph Runtime</span>
+      </div>
+      <div class="feature">
+        <p>
+          一个面向具身任务和多 benchmark 的智能体运行时，核心能力是 CommandBus、
+          ROS 文本接入、任务栈式中断与恢复、分层反思，以及多模型并行调度。
+        </p>
+        <div class="mini-grid">
+          <span>Understanding</span>
+          <span>Planning</span>
+          <span>Task Management</span>
+          <span>Reflection</span>
+          <span>ROS</span>
+          <span>Benchmark Adapter</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Upcoming</h2>
+        <span>持续更新</span>
+      </div>
+      <div class="feature">
+        <p>
+          后续会继续补充 RAG、检索增强、多 Agent 协同、大模型部署和推理优化相关项目。
+          主页的结构已经固定，新增项目时只需要往这里继续加卡片。
+        </p>
+        <div class="mini-grid">
+          <span>RAG</span>
+          <span>Retrieval</span>
+          <span>Multi-Agent</span>
+          <span>LLM Ops</span>
+          <span>Deployment</span>
+          <span>Benchmarking</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
