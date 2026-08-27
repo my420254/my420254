@@ -18,7 +18,8 @@
 | HiPro-LoRA | 低资源情感分析 PEFT 论文 | ECML-PKDD 已接收 | 严格 held-out 协议，验证集只做选择，测试集只做最终报告 |
 | SPEAR | ECPE 论文 | KBS 投稿版本 | 结构解耦、DoRA biaffine、R-Drop、窗口约束解码 |
 | FASTE | ASTE 论文 | ESWA 投稿版本 | 多层特征融合 + 对抗训练，兼顾边界对齐和实时性 |
-| OurAgent | 智能体框架 | 持续迭代 | LangGraph + ROS + CommandBus + 中断恢复 + 反思闭环 |
+| OurAgent-he1 | 实习核心 Agent runtime | 已公开 | LangGraph + ROS 文本服务 + CommandBus + 中断恢复 + 反思闭环 |
+| OurAgent | benchmark / paper method runtime | 已公开 | DELTA / EAI / ReAcTree 多 benchmark，对比论文方法和裸基线 |
 
 ## 1. Hy-MoRA
 
@@ -108,7 +109,7 @@ ASTE 里很多方法只看最后一层，边界信息和局部语法很容易丢
 
 “我做的是一个面向真实应用的 ASTE 框架，不是泛泛的情感分析 baseline。”
 
-## 5. OurAgent
+## 5. OurAgent-he1 / OurAgent
 
 ### 解决的问题
 
@@ -126,12 +127,15 @@ ASTE 里很多方法只看最后一层，边界信息和局部语法很容易丢
 - 做 CommandBus，把 ROS 文本、CLI 命令和外部输入统一成结构化任务流。
 - 设计任务栈式中断与恢复，支持多层嵌套插单。
 - 把 benchmark、执行器和本地大模型调用解耦，方便并行跑多个环境。
+- 把 `main.py` 收敛成正式 ROS / 前端入口，把 `scripts/run_agent.py` 收敛成 CLI 调试入口。
 
 ### 亮点
 
 - 这不是脚本集合，而是一个有运行时边界的 agent framework。
 - 你已经把“模型能力”变成“能接任务、能恢复、能追踪、能复盘”的系统能力。
 - 对外讲的时候，这一块最能体现你是系统型智能体研发，不是只会调 prompt。
+- `OurAgent-he1` 展示实时任务接入、中断恢复、取消暂停和 ROS 端到端链路。
+- `OurAgent` 展示 benchmark 对比、paper method / bare baseline 公平评测和多数据集实验组织。
 
 ### 对外讲法
 
