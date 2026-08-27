@@ -24,7 +24,7 @@
 | [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | PEFT 论文项目 | ECML-PKDD 已接收，CCF B | LoRA、长尾学习、严格 held-out、LLM baseline |
 | [Hy-MoRA](https://github.com/my420254/Hy-Mora) | PEFT 论文项目 | WISA 中文会议已接收 | 中文社交媒体、尾部记忆、层次化语义聚合、部署效率 |
 | [FASTE](https://github.com/my420254/FASTE) | ASTE 论文项目 | ESWA 投稿版本 | 三元组抽取、span-based、MLFF、AT-FGM |
-| [SPEAR / ECPE](https://github.com/my420254/ECPE) | ECPE 论文项目 | KBS 投稿版本 | 情绪原因对抽取、DoRA-biaffine、R-Drop、窗口解码 |
+| [SPEAR](https://github.com/my420254/SPEAR) | ECPE 论文项目 | KBS 投稿版本 | 情绪原因对抽取、DoRA-biaffine、R-Drop、窗口解码 |
 | [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 大模型应用工程 | 展示项目 | FastAPI、SSE、Redis、RAG、Vue3、工具调用 |
 
 ## 代表能力

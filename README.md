@@ -27,7 +27,7 @@ Gitee 镜像：<https://gitee.com/my420254>
 | [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收，CCF B | 低资源长尾情感分析的参数高效微调方法与严格 held-out 评测包 | 在多组配置中提升 Tail-F1 / Macro-F1，并保持可复现实验口径 |
 | [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 中文会议已接收 | 中文社交媒体长尾情感分析 PEFT 框架，结合层次化语义聚合与尾部记忆对齐 | 以 110M 级模型对标 7B LLM，在精度、吞吐和部署成本之间取得更优平衡 |
 | [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本 | 面向 ASTE 的 span-based 三元组抽取框架，多层特征融合 + 对抗训练 | 强化边界对齐和跨词关系建模，适合结构化情感分析任务 |
-| [SPEAR / ECPE](https://github.com/my420254/ECPE) | KBS 投稿版本 | 情绪原因对抽取框架，结合 span-aware 表征、DoRA-biaffine 打分和 R-Drop 正则 | 面向文档级结构化抽取，提升配对精度和训练稳定性 |
+| [SPEAR](https://github.com/my420254/SPEAR) | KBS 投稿版本 | 面向情绪原因对抽取（ECPE）的结构化 NLP 框架，结合 span-aware 表征、DoRA-biaffine 打分和 R-Drop 正则 | 面向文档级结构化抽取，提升配对精度和训练稳定性 |
 | [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 工程展示项目 | FastAPI + SSE + Redis + RAG + Vue3 的企业知识库智能体骨架 | 展示检索、重排、记忆、工具调用、流式输出和前后端服务化能力 |
 
 ## 技术栈
@@ -41,4 +41,4 @@ Gitee 镜像：<https://gitee.com/my420254>
 3. [Embodied Agent Runtime](https://github.com/my420254/Embodied-Agent-Runtime)：了解具身智能体运行时、外部文本接入和任务管理。
 4. [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) 与 [Hy-MoRA](https://github.com/my420254/Hy-Mora)：了解 PEFT、长尾学习和严格实验协议。
 5. [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform)：了解大模型应用服务化、RAG、Redis 记忆和 SSE 流式输出。
-6. [FASTE](https://github.com/my420254/FASTE) 与 [SPEAR / ECPE](https://github.com/my420254/ECPE)：了解结构化 NLP 抽取任务与论文级实验组织。
+6. [FASTE](https://github.com/my420254/FASTE) 与 [SPEAR](https://github.com/my420254/SPEAR)：了解结构化 NLP 抽取任务与论文级实验组织。
