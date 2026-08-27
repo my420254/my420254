@@ -1,64 +1,40 @@
 # 张梦洋
 
-智能体研发 / 具身规划 / 长尾感知与 PEFT / 论文与系统工程
+**智能体研发 / 大模型应用算法 / NLP 与参数高效微调**
 
-我做的不是单点模型，而是把论文方法、实验协议和运行时系统做成闭环。
-论文、代码、实验、图表和稿件整理均由本人主导完成。
+邮箱：1127141319@qq.com
 
-## 我最强的几件事
+GitHub Pages：<https://my420254.github.io/my420254/>
 
-- 能把原始数据清洗成可训练、可审计、可复现的数据集
-- 能把 LoRA / DoRA / prototype memory / hierarchical pooling 落到可跑代码
-- 能把模型接进 LangGraph / ROS / CommandBus / benchmark runtime
-- 能把并行推理、评测协议、部署吞吐和结果复盘一起管住
+Gitee 镜像：<https://gitee.com/my420254>
 
-## 代表成果
+我关注大模型智能体、具身任务规划、NLP 结构化抽取和参数高效微调。过去的工作覆盖了从数据集清洗、模型训练、论文实验，到 LangGraph 运行时、ROS/前端文本接入、vLLM 并行评测和 RAG 工程化展示的完整链路。
 
-| 项目 | 状态 | 我做的核心工作 | 结果亮点 |
+## 研究与工程方向
+
+- **智能体运行时**：LangGraph 图编排、CommandBus 外部命令通道、任务栈式中断恢复、执行反馈、失败反思与局部重试。
+- **参数高效微调**：LoRA / DoRA / PEFT、长尾学习、原型记忆、层次化语义聚合、低资源情感分析。
+- **结构化 NLP**：情感原因对抽取、方面级情感三元组抽取、span-based 表示、biaffine 关系建模、对抗训练。
+- **大模型工程化**：vLLM 部署、多端口并行实验、RAG 检索增强生成、Redis 会话记忆、FastAPI/SSE 流式服务。
+
+## 代表项目
+
+| 项目 | 状态 | 核心内容 | 价值 |
 | --- | --- | --- | --- |
-| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 中文会议已接收 | 设计层次化语义聚合 + 尾部感知记忆对齐，完成实验与图表整理 | 110M 级 PEFT 框架，在 SMP2020-EWECT 上对标 7B LLM，Macro-F1 提升 6.12 个百分点，吞吐量提升约 55 倍 |
-| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收，CCF B | 做严格 held-out 协议、完成结果整理和稳定性验证 | 5/6 配置 Tail-F1 最优，4/6 配置 Macro-F1 最优 |
-| [SPEAR](https://github.com/my420254/ECPE) | KBS 投稿版本，高影响力期刊方向 | 设计 span-aware 表征、DoRA biaffine、R-Drop 和窗口约束解码 | 10 折交叉验证 F1 达到 77.24% |
-| [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本，高影响力期刊方向 | 设计多层特征融合 + 对抗训练，并完成论文图表与实验闭环 | ASTE 抽取达到强基线水平，兼顾边界精度与工程实时性 |
-| [OurAgent-he1](https://github.com/my420254/OurAgent-he1) | 实习核心项目 | 把规划能力接入 LangGraph runtime、ROS 文本服务和 CommandBus | 支持外部文本接入、任务插单、栈式恢复、取消暂停、反思重试 |
-| [OurAgent](https://github.com/my420254/OurAgent) | benchmark 版本 | 多 benchmark 适配、论文方法对比、裸基线公平评测 | 支持 DELTA / EAI / ReAcTree 等多任务评测链路 |
-| [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 工程展示项目 | 构建 FastAPI + SSE + Redis memory + RAG + Vue3 的 Agentic RAG 骨架 | 覆盖大厂常问的检索、重排、记忆、工具调用、流式输出和工程化部署 |
+| [Embodied Agent Runtime](https://github.com/my420254/Embodied-Agent-Runtime) | 实习核心项目 | 面向 ROS / 前端 / CLI 的 LangGraph 具身智能体运行时 | 统一文本接入、任务插单、中断恢复、取消暂停、失败反思和 benchmark 对齐 |
+| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收，CCF B | 低资源长尾情感分析的参数高效微调方法与严格 held-out 评测包 | 在多组配置中提升 Tail-F1 / Macro-F1，并保持可复现实验口径 |
+| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 中文会议已接收 | 中文社交媒体长尾情感分析 PEFT 框架，结合层次化语义聚合与尾部记忆对齐 | 以 110M 级模型对标 7B LLM，在精度、吞吐和部署成本之间取得更优平衡 |
+| [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本 | 面向 ASTE 的 span-based 三元组抽取框架，多层特征融合 + 对抗训练 | 强化边界对齐和跨词关系建模，适合结构化情感分析任务 |
+| [SPEAR / ECPE](https://github.com/my420254/ECPE) | KBS 投稿版本 | 情绪原因对抽取框架，结合 span-aware 表征、DoRA-biaffine 打分和 R-Drop 正则 | 面向文档级结构化抽取，提升配对精度和训练稳定性 |
+| [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 工程展示项目 | FastAPI + SSE + Redis + RAG + Vue3 的企业知识库智能体骨架 | 展示检索、重排、记忆、工具调用、流式输出和前后端服务化能力 |
 
-## 我的工作风格
+## 技术栈
 
-我更偏算法开发，但不会只停在算法本身。
-我会把方法、数据、评测、部署、文档和演示一起做完，让一个项目能被真正看懂、跑通、复现和展示。
+`Python` · `PyTorch` · `Transformers` · `PEFT` · `LoRA` · `DoRA` · `LangGraph` · `LangChain` · `FastAPI` · `Redis` · `SSE` · `Vue3` · `vLLM` · `ROS2` · `RAG`
 
-## 我在做什么
+## 项目阅读顺序
 
-- 把原始数据整理成可训练、可审计、可复现的数据集
-- 把论文里的方法对比、图表、显著性检验和部署评估做成完整链路
-- 把单次推理结果变成可调度、可中断、可恢复的 agent runtime
-- 把模型能力扩展到多 benchmark、多模型、多进程并行的实际环境
-
-## 正在推进 / 未来展示方向
-
-- RAG / 检索增强生成
-- 多 Agent 协同与任务编排
-- 大模型部署、评测和推理加速
-- 面向实际业务的数据治理与算法落地
-
-## 公开仓库
-
-- [Hy-Mora](https://github.com/my420254/Hy-Mora)
-- [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA)
-- [ECPE / SPEAR](https://github.com/my420254/ECPE)
-- [FASTE / ASTE](https://github.com/my420254/FASTE)
-- [OurAgent-he1 / ROS-LangGraph Runtime](https://github.com/my420254/OurAgent-he1)
-- [OurAgent / Benchmark Runtime](https://github.com/my420254/OurAgent)
-- [Agentic-RAG-Platform / RAG 工程展示](https://github.com/my420254/Agentic-RAG-Platform)
-
-## 关键词
-
-Long-tailed learning, PEFT, LoRA, DoRA, prototype memory, sentiment analysis, ECPE, ASTE, LangGraph, ROS, CommandBus, RAG, FastAPI, SSE, Redis, Vue3, benchmark orchestration.
-
-## 联系方式
-
-- GitHub: `my420254`
-- Gitee: `my420254`
-- 邮箱: `按你的正式邮箱补上`
+1. [Embodied Agent Runtime](https://github.com/my420254/Embodied-Agent-Runtime)：了解具身智能体运行时、外部文本接入和任务管理。
+2. [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) 与 [Hy-MoRA](https://github.com/my420254/Hy-Mora)：了解 PEFT、长尾学习和严格实验协议。
+3. [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform)：了解大模型应用服务化、RAG、Redis 记忆和 SSE 流式输出。
+4. [FASTE](https://github.com/my420254/FASTE) 与 [SPEAR / ECPE](https://github.com/my420254/ECPE)：了解结构化 NLP 抽取任务与论文级实验组织。
