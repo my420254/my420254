@@ -20,6 +20,7 @@
 | --- | --- | --- | --- |
 | [Embodied Agent Runtime](https://github.com/my420254/Embodied-Agent-Runtime) | 具身智能体运行时 | 实习核心项目 | LangGraph、ROS2、CommandBus、任务栈、中断恢复、反思重试 |
 | [Embodied VLM Explorer](https://github.com/my420254/Embodied-VLM-Explorer) | VLM/VLA 预研 | 路线探索项目 | 视觉语言动作闭环、状态回写、技能接口、路线取舍 |
+| [ALFRED SFT Brain](https://github.com/my420254/ALFRED-SFT-Brain) | 具身任务 SFT | 实习前期模型项目 | ALFRED、AI2-THOR、Qwen2.5-7B、LoRA、Next Action |
 | [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | PEFT 论文项目 | ECML-PKDD 已接收，CCF B | LoRA、长尾学习、严格 held-out、LLM baseline |
 | [Hy-MoRA](https://github.com/my420254/Hy-Mora) | PEFT 论文项目 | WISA 中文会议已接收 | 中文社交媒体、尾部记忆、层次化语义聚合、部署效率 |
 | [FASTE](https://github.com/my420254/FASTE) | ASTE 论文项目 | ESWA 投稿版本 | 三元组抽取、span-based、MLFF、AT-FGM |
