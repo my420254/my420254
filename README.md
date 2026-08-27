@@ -22,6 +22,7 @@
 | [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本 | 设计多层特征融合 + 对抗训练，并完成论文图表与实验闭环 | ASTE 抽取达到强基线水平，兼顾边界精度与工程实时性 |
 | [OurAgent-he1](https://github.com/my420254/OurAgent-he1) | 实习核心项目 | 把规划能力接入 LangGraph runtime、ROS 文本服务和 CommandBus | 支持外部文本接入、任务插单、栈式恢复、取消暂停、反思重试 |
 | [OurAgent](https://github.com/my420254/OurAgent) | benchmark 版本 | 多 benchmark 适配、论文方法对比、裸基线公平评测 | 支持 DELTA / EAI / ReAcTree 等多任务评测链路 |
+| [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 工程展示项目 | 构建 FastAPI + SSE + Redis memory + RAG + Vue3 的 Agentic RAG 骨架 | 覆盖大厂常问的检索、重排、记忆、工具调用、流式输出和工程化部署 |
 
 ## 我的工作风格
 
@@ -50,10 +51,11 @@
 - [FASTE / ASTE](https://github.com/my420254/FASTE)
 - [OurAgent-he1 / ROS-LangGraph Runtime](https://github.com/my420254/OurAgent-he1)
 - [OurAgent / Benchmark Runtime](https://github.com/my420254/OurAgent)
+- [Agentic-RAG-Platform / RAG 工程展示](https://github.com/my420254/Agentic-RAG-Platform)
 
 ## 关键词
 
-Long-tailed learning, PEFT, LoRA, DoRA, prototype memory, sentiment analysis, ECPE, ASTE, LangGraph, ROS, CommandBus, benchmark orchestration.
+Long-tailed learning, PEFT, LoRA, DoRA, prototype memory, sentiment analysis, ECPE, ASTE, LangGraph, ROS, CommandBus, RAG, FastAPI, SSE, Redis, Vue3, benchmark orchestration.
 
 ## 联系方式
 

@@ -20,6 +20,7 @@
 | FASTE | ASTE 论文 | ESWA 投稿版本 | 多层特征融合 + 对抗训练，兼顾边界对齐和实时性 |
 | OurAgent-he1 | 实习核心 Agent runtime | 已公开 | LangGraph + ROS 文本服务 + CommandBus + 中断恢复 + 反思闭环 |
 | OurAgent | benchmark / paper method runtime | 已公开 | DELTA / EAI / ReAcTree 多 benchmark，对比论文方法和裸基线 |
+| Agentic-RAG-Platform | 大模型应用工程展示 | 已公开 | FastAPI + SSE + Redis + RAG + Vue3，覆盖企业知识库和多工具 Agent |
 
 ## 1. Hy-MoRA
 
@@ -167,7 +168,7 @@ Gitee 只负责国内可访问，不要和 GitHub 两套内容分裂。
 
 ## 后续还能继续补的展示方向
 
-- RAG：检索、切片、召回、重排、答案生成的一体化项目
+- RAG：`Agentic-RAG-Platform` 已补第一版，后续可加入真实向量库、reranker 和评测集
 - Agent：工具调用、任务分解、长短期记忆、失败恢复
 - LLM Ops：并行调度、推理服务、量化、吞吐和延迟优化
 - 数据方向：清洗、对齐、抽样、评测集构造、偏差分析
