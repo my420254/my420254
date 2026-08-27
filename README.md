@@ -16,10 +16,10 @@
 
 | 项目 | 状态 | 我做的核心工作 | 结果亮点 |
 | --- | --- | --- | --- |
-| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 已接收 | 设计层次化语义聚合 + 尾部感知记忆对齐，完成实验与图表整理 | 110M 级 PEFT 框架，在 SMP2020-EWECT 上对标 7B LLM，Macro-F1 提升 6.12 个百分点，吞吐量提升约 55 倍 |
-| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收 | 做严格 held-out 协议、完成结果整理和稳定性验证 | 5/6 配置 Tail-F1 最优，4/6 配置 Macro-F1 最优 |
-| [SPEAR](https://github.com/my420254/ECPE) | KBS 投稿版本 | 设计 span-aware 表征、DoRA biaffine、R-Drop 和窗口约束解码 | 10 折交叉验证 F1 达到 77.24% |
-| [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本 | 设计多层特征融合 + 对抗训练，并完成论文图表与实验闭环 | ASTE 抽取达到强基线水平，兼顾边界精度与工程实时性 |
+| [Hy-MoRA](https://github.com/my420254/Hy-Mora) | WISA 中文会议已接收 | 设计层次化语义聚合 + 尾部感知记忆对齐，完成实验与图表整理 | 110M 级 PEFT 框架，在 SMP2020-EWECT 上对标 7B LLM，Macro-F1 提升 6.12 个百分点，吞吐量提升约 55 倍 |
+| [HiPro-LoRA](https://github.com/my420254/HiPro-LoRA) | ECML-PKDD 已接收，CCF B | 做严格 held-out 协议、完成结果整理和稳定性验证 | 5/6 配置 Tail-F1 最优，4/6 配置 Macro-F1 最优 |
+| [SPEAR](https://github.com/my420254/ECPE) | KBS 投稿版本，高影响力期刊方向 | 设计 span-aware 表征、DoRA biaffine、R-Drop 和窗口约束解码 | 10 折交叉验证 F1 达到 77.24% |
+| [FASTE](https://github.com/my420254/FASTE) | ESWA 投稿版本，高影响力期刊方向 | 设计多层特征融合 + 对抗训练，并完成论文图表与实验闭环 | ASTE 抽取达到强基线水平，兼顾边界精度与工程实时性 |
 | [OurAgent-he1](https://github.com/my420254/OurAgent-he1) | 实习核心项目 | 把规划能力接入 LangGraph runtime、ROS 文本服务和 CommandBus | 支持外部文本接入、任务插单、栈式恢复、取消暂停、反思重试 |
 | [OurAgent](https://github.com/my420254/OurAgent) | benchmark 版本 | 多 benchmark 适配、论文方法对比、裸基线公平评测 | 支持 DELTA / EAI / ReAcTree 等多任务评测链路 |
 | [Agentic-RAG-Platform](https://github.com/my420254/Agentic-RAG-Platform) | 工程展示项目 | 构建 FastAPI + SSE + Redis memory + RAG + Vue3 的 Agentic RAG 骨架 | 覆盖大厂常问的检索、重排、记忆、工具调用、流式输出和工程化部署 |

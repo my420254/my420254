@@ -14,10 +14,10 @@
 
 | 名称 | 类型 | 状态 | 你可以强调的点 |
 | --- | --- | --- | --- |
-| Hy-MoRA | 长尾情感分析 PEFT 论文 | WISA 已接收 | 110M 级模型对标 7B LLM，长尾感知和部署效率同时成立 |
-| HiPro-LoRA | 低资源情感分析 PEFT 论文 | ECML-PKDD 已接收 | 严格 held-out 协议，验证集只做选择，测试集只做最终报告 |
-| SPEAR | ECPE 论文 | KBS 投稿版本 | 结构解耦、DoRA biaffine、R-Drop、窗口约束解码 |
-| FASTE | ASTE 论文 | ESWA 投稿版本 | 多层特征融合 + 对抗训练，兼顾边界对齐和实时性 |
+| Hy-MoRA | 长尾情感分析 PEFT 论文 | WISA 中文会议已接收 | 110M 级模型对标 7B LLM，长尾感知和部署效率同时成立 |
+| HiPro-LoRA | 低资源情感分析 PEFT 论文 | ECML-PKDD 已接收，CCF B | 严格 held-out 协议，验证集只做选择，测试集只做最终报告 |
+| SPEAR | ECPE 论文 | KBS 投稿版本，高影响力期刊方向 | 结构解耦、DoRA biaffine、R-Drop、窗口约束解码 |
+| FASTE | ASTE 论文 | ESWA 投稿版本，高影响力期刊方向 | 多层特征融合 + 对抗训练，兼顾边界对齐和实时性 |
 | OurAgent-he1 | 实习核心 Agent runtime | 已公开 | LangGraph + ROS 文本服务 + CommandBus + 中断恢复 + 反思闭环 |
 | OurAgent | benchmark / paper method runtime | 已公开 | DELTA / EAI / ReAcTree 多 benchmark，对比论文方法和裸基线 |
 | Agentic-RAG-Platform | 大模型应用工程展示 | 已公开 | FastAPI + SSE + Redis + RAG + Vue3，覆盖企业知识库和多工具 Agent |
